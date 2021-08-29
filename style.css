@@ -1,0 +1,254 @@
+html {
+  font-size: 16px;
+}
+body {
+  color: #1A1A1A;
+  font: 1rem 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.icon-arrow {
+  padding-right: 15px;
+  background: url(./img/arrow.svg) right center no-repeat;
+}
+
+.slide-enter-active,
+.slide-leave-active
+{
+  transition: transform 0.2s ease;
+}
+
+.slide-enter,
+.slide-leave-to {
+  transform: translateY(-100%);
+  transition: all 150ms ease-in 0s
+}
+
+.carousel-enter-active,
+.carousel-leave-active
+{
+  opacity: 0;
+  transform: translateY(0px);
+  transition: transform .5s ease;
+}
+
+.carousel-enter,
+.carousel-leave-to {
+    opacity: 1;
+    transform: translateY(100px);
+    transition: all .5s ease-in 0s
+}
+
+.mobile-menu {
+  background: #fff;
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 999;
+  padding: 3rem 20px 2rem 20px;
+  width: 100%;
+}
+
+
+/* content */
+.visual-title {
+  padding-top: 22.125rem;
+  font-size: 1.8rem;
+}
+.wave {
+  width: 19.7rem;
+  height: 24.6rem;
+}
+.visual-descript {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.visual-txt {
+  color: #474747;
+  opacity: 0.5;
+  font-size: 1.375rem;
+}
+.nk-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #00A4B8;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-right: 1.5rem;
+  background: url(img/circular_arrow.png) no-repeat right center;
+}
+
+.spring {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .wave {
+    width: 57.3rem;
+    height: 74rem;
+    left: -10px;
+  }
+  .visual-title {
+    padding-top: 21.875rem;
+    font-size: 3.625rem;
+    padding-left: 0.3125rem;
+  }
+  .visual-descript {
+    margin-top: 3.4rem;
+    margin-bottom: 2.5rem;
+    padding-left: 2rem;
+    padding-bottom: 12.5rem;
+    border-left: 1px solid #8A8A8A;
+  }
+  .visual-txt {
+    opacity: 1;
+    font-size: 1.875rem;
+  }
+  .nk-link {
+    font-size: 1.125rem;
+  }
+}
+
+.unique {
+  background-color: #00A4B8;
+}
+.unique-wrapper {
+  padding-top: 4rem;
+}
+
+.unique-title {
+  font-size: 2.6rem;
+  margin-top: 2.5rem;
+}
+
+.unique-descript {
+  margin-top: 3rem;
+  padding-bottom: 5.5rem;
+}
+
+.unique-txt {
+  line-height: 1.5;
+}
+
+.unique-link {
+  display: inline-block;
+  margin-top: 3rem;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-right: 1.5rem;
+  background: url(img/white_circular_arrow.png) no-repeat right center;
+}
+
+@media screen and (min-width: 1024px) {
+  .unique-wrapper {
+    padding-top: 10.375rem;
+  }
+  .unique-title {
+    font-size: 4.5rem;
+    margin-top: 1.5rem;
+  }
+  .unique-descript {
+    margin-top: 6.25rem;
+    padding-left: 2rem;
+    padding-bottom: 7rem;
+    border-left: 1px solid #FAFAFA;
+  }
+  .unique-link {
+    font-size: 1.125rem;
+  }
+}
+
+.feature {
+  padding-top: 4rem;
+  padding-bottom: 5.6rem;
+}
+.feature-mobile {
+  margin-bottom: 2.5rem;
+}
+.feature-number {
+  font-size: 3.25rem;
+}
+.feature-item {
+  color: #00A4B8;
+  opacity: 0.1;
+  cursor: pointer;
+}
+.feature-item.active {
+  opacity: 1;
+}
+
+.feature-article-name-txt {
+  font-size: 2.6rem;
+}
+
+.feature-chart-content {
+  margin-top: 2rem;
+}
+
+.feature-chart-name {
+  font-size: 1.375rem;
+  color: #00A4B8;
+}
+.feature-chart {
+  margin-top: 1.5rem;
+}
+.feature-table {
+  margin-top: 1rem;
+  font-size: .875rem;
+}
+
+.feature-table-row {
+  padding: 0.5rem 0;
+}
+
+.feature-table-row span {
+  color: #8A8A8A;
+  padding-left: .5rem;
+}
+
+.feature .nk-link {
+  margin-top: 3.125rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature {
+    padding-top: 11.5rem;
+    padding-bottom: 3rem;
+  }
+  .feature-number {
+    font-size: 9.375rem;
+    margin-left: 5rem;
+  }
+  
+  .feature-article-name-txt {
+    font-size: 4.5rem;
+    width: 29.5rem;
+  }
+  
+  .feature-chart-content {
+    margin-top: 3.75rem;
+  }
+  
+  .feature-chart-name {
+    font-size: 2.5rem;
+    width: 29.5rem;
+  }
+  .feature-chart {
+    margin-top: 3.75rem;
+  }
+  .feature-table {
+    margin-top: 5.3rem;
+    font-size: 1.125rem;
+    width: 20rem;
+  }
+  
+  .feature-table-row {
+    border-top: 1px solid #8A8A8A;
+    padding: 1rem 0 1rem 0;
+  }
+  
+  .feature-table-row span {
+    padding-left: 1rem;
+  }
+}
